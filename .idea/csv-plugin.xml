@@ -3,24 +3,10 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="/brazil_covid19.csv">
+        <entry key="/datasets/brazil_covid19.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/opsd_germany_daily.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/prod_petroleo.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
             </Attribute>
           </value>
         </entry>

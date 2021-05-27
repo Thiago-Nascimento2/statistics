@@ -19,19 +19,19 @@ df = df.where(df != '?').dropna()
 print(df)
 
 # definição de x e y
+x = df.loc[:, ['date', 'state', 'suspects']]
+y = df.drop(columns=['hour', 'suspects'])
 
-x = df.suspects
-y = df.loc['refuses':'deaths']
+print(f'X <=\n {x}\n Y <=\n {y}')
+
 
 # Média, variância, desvio padrão e mediana para x e y.
 
 # agrupados por dia
-mean_by_day = df.groupby(['date']).mean()
+x_mean_by_day = x.groupby(['date']).mean()
+print(f'x  group by date <=\n {x.groupby(["date"])}')
+print(f'x_mean_by_day <= {x_mean_by_day}')
 std_by_day = df.groupby(['date']).std()
-
-# agrupados por mes #*passivel de remoção*#
-mean_by_month = df.groupby(['date']).sum().mean()
-std_by_month = df.groupby(['date']).std()
 
 mean_by_state = df.groupby(['state']).mean()
 std_by_state = df.groupby(['state']).std()
