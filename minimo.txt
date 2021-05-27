@@ -1,0 +1,4 @@
+    a) Média, variância, desvio padrão e mediana para x e y.
+    b) O histograma de x e y.
+    c) O coeficiente de correlação de x e y.
+    d) Fazer o teste de normalidade para  y e x.
