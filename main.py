@@ -4,7 +4,6 @@ import pandas as pd
 
 
 # importar os dados
-df = None
 df = pd.read_csv('datasets/brazil_covid19.csv')
 #print(df)
 
@@ -29,9 +28,13 @@ print(f'X <=\n {x}\n Y <=\n {y}')
 
 # agrupados por dia
 x_mean_by_day = x.groupby(['date']).mean()
+y_mean_by_day = y.groupby(['date']).mean()
 print(f'x  group by date <=\n {x.groupby(["date"])}')
+print(f'y  group by date <=\n {y.groupby(["date"])}')
 print(f'x_mean_by_day <= {x_mean_by_day}')
+print(f'y_mean_by_date')
 std_by_day = df.groupby(['date']).std()
+
 
 mean_by_state = df.groupby(['state']).mean()
 std_by_state = df.groupby(['state']).std()
